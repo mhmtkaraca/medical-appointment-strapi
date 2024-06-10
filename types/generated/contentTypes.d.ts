@@ -832,6 +832,7 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required;
     icon: Attribute.Media & Attribute.Required;
+<<<<<<< HEAD
     nameText: Attribute.String &
       Attribute.Required &
       Attribute.SetMinMaxLength<{
@@ -845,6 +846,12 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
       Attribute.SetMinMaxLength<{
         maxLength: 2000;
       }>;
+=======
+    nameText: Attribute.String & Attribute.Required;
+    obenText: Attribute.String & Attribute.Required;
+    media: Attribute.Media & Attribute.Required;
+    underText: Attribute.String & Attribute.Required;
+>>>>>>> 69dc8ff (export)
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

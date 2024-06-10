@@ -18,7 +18,7 @@
     },
     "icon": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "allowedTypes": [
         "images",
@@ -29,29 +29,27 @@
     },
     "nameText": {
       "type": "string",
-      "minLength": 100,
-      "maxLength": 300,
       "required": true
     },
-    "obenMediaText": {
-      "type": "text",
+    "obenText": {
+      "type": "string",
       "required": true
     },
     "media": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
     },
-    "underMediaText": {
-      "type": "text",
-      "required": true,
-      "maxLength": 2000
+
+    "underText": {
+      "type": "string",
+      "required": true
     }
   }
 }
