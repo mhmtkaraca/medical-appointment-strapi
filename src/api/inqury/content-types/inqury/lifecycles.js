@@ -7,9 +7,9 @@ module.exports = {
         .plugin("email")
         .service("email")
         .send({
-          to: "muhsin.altintop@gmail.com",
-          from: "healthclinicturkiye@odycodigital.com",
-          subject: "New Inquiry From ",
+          to: "info@healthclinicturkiye.com",
+          from: "info@healthclinicturkiye.com",
+          subject: "New Inquiry Form",
           text: `You have new inqury from healtclinicturkiye.com. Details: Name: ${result.fullName}, email: ${result.email}, phone: ${result.phone}, treatment: ${result.treatment}, note: ${result.note} `,
         });
     } catch (err) {

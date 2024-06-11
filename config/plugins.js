@@ -4,17 +4,21 @@ module.exports = ({ env }) => ({
     config: {
       provider: "nodemailer",
       providerOptions: {
-        host: env("SMTP_HOST"),
-        port: env("SMTP_PORT"),
+        // host: env("SMTP_HOST"),
+        // port: env("SMTP_PORT"),
+        service: "gmail",
+
         auth: {
-          user: env("SMTP_USERNAME"),
-          pass: env("SMTP_PASSWORD"),
+          user: env("GMAIL"),
+
+          pass: env("GMAIL_PASS"),
         },
+
         // ... any custom nodemailer options
       },
       settings: {
-        defaultFrom: "healthclinicturkiye@odycodigital.com",
-        defaultReplyTo: "healthclinicturkiye@odycodigital.com",
+        defaultFrom: "info@healthclinicturkiye.com",
+        defaultReplyTo: "info@healthclinicturkiye.com",
       },
     },
   },
