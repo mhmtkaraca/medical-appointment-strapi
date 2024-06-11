@@ -957,6 +957,43 @@ export interface ApiHospitalHospital extends Schema.CollectionType {
   };
 }
 
+export interface ApiInquryInqury extends Schema.CollectionType {
+  collectionName: 'inquries';
+  info: {
+    singularName: 'inqury';
+    pluralName: 'inquries';
+    displayName: 'inqury';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    fullName: Attribute.String & Attribute.Required;
+    email: Attribute.Email & Attribute.Required;
+    phone: Attribute.BigInteger & Attribute.Required;
+    treatment: Attribute.Enumeration<
+      ['hairTransplant', 'dentalCare', 'plasticSurgery']
+    > &
+      Attribute.Required;
+    note: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::inqury.inqury',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::inqury.inqury',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiLocationLocation extends Schema.CollectionType {
   collectionName: 'locations';
   info: {
@@ -1074,6 +1111,7 @@ declare module '@strapi/types' {
       'api::department.department': ApiDepartmentDepartment;
       'api::gallery.gallery': ApiGalleryGallery;
       'api::hospital.hospital': ApiHospitalHospital;
+      'api::inqury.inqury': ApiInquryInqury;
       'api::location.location': ApiLocationLocation;
       'api::review.review': ApiReviewReview;
       'api::service.service': ApiServiceService;

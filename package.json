@@ -13,6 +13,7 @@
     "@strapi/plugin-cloud": "4.24.2",
     "@strapi/plugin-i18n": "4.24.2",
     "@strapi/plugin-users-permissions": "4.24.2",
+    "@strapi/provider-email-nodemailer": "^4.24.5",
     "@strapi/provider-upload-cloudinary": "^4.24.2",
     "@strapi/strapi": "4.24.2",
     "mysql": "2.18.1",
