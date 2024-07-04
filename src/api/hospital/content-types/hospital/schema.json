@@ -42,36 +42,47 @@
       "required": true
     },
     "overviewImage": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true,
-      "required": true
+      ]
     },
     "vision": {
       "type": "text",
       "required": true
     },
     "visionImage": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true,
-      "required": true
+      ]
     },
     "mission": {
       "type": "string",
       "required": true
     },
     "missionImage": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "servicesImage": {
       "allowedTypes": [
         "images",
         "files",
@@ -79,11 +90,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true,
-      "required": true
-    },
-    "servicesImage": {
-      "type": "string",
+      "multiple": false,
       "required": true
     }
   }

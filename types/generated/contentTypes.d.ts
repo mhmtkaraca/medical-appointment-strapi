@@ -980,7 +980,7 @@ export interface ApiHospitalHospital extends Schema.CollectionType {
     visionImage: Attribute.Media & Attribute.Required;
     mission: Attribute.String & Attribute.Required;
     missionImage: Attribute.Media & Attribute.Required;
-    servicesImage: Attribute.String & Attribute.Required;
+    servicesImage: Attribute.Media & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
