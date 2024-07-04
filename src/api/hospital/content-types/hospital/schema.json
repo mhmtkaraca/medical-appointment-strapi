@@ -68,7 +68,7 @@
       ]
     },
     "mission": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "missionImage": {
@@ -83,15 +83,15 @@
       ]
     },
     "servicesImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     }
   }
 }
