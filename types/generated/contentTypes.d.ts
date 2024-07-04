@@ -939,6 +939,13 @@ export interface ApiHospitalHospital extends Schema.CollectionType {
       'oneToMany',
       'api::location.location'
     >;
+    overview: Attribute.Text & Attribute.Required;
+    overviewImage: Attribute.Media & Attribute.Required;
+    vision: Attribute.Text & Attribute.Required;
+    visionImage: Attribute.Media & Attribute.Required;
+    mission: Attribute.String & Attribute.Required;
+    missionImage: Attribute.Media & Attribute.Required;
+    servicesImage: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

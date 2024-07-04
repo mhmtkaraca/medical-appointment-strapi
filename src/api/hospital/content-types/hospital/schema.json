@@ -36,6 +36,55 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::location.location"
+    },
+    "overview": {
+      "type": "text",
+      "required": true
+    },
+    "overviewImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "vision": {
+      "type": "text",
+      "required": true
+    },
+    "visionImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "mission": {
+      "type": "string",
+      "required": true
+    },
+    "missionImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "servicesImage": {
+      "type": "string",
+      "required": true
     }
   }
 }
