@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "before_afters",
+  "info": {
+    "singularName": "before-after",
+    "pluralName": "before-afters",
+    "displayName": "BeforeAfter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imagebefore": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageafter": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
