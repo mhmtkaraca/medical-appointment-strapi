@@ -15,8 +15,8 @@ module.exports = ({ env }) => ({
         // ... any custom nodemailer options
       },
       settings: {
-        defaultFrom: "info@healthclinicturkiye.com",
-        defaultReplyTo: "info@healthclinicturkiye.com",
+        defaultFrom: "info@healthhubturkiye.com",
+        defaultReplyTo: "info@healthhubturkiye.com",
       },
     },
   },
