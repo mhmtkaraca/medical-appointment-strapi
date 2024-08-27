@@ -32,7 +32,7 @@
       "required": true
     },
     "obenText": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "media": {
@@ -48,7 +48,7 @@
     },
 
     "underText": {
-      "type": "string",
+      "type": "text",
       "required": true
     }
   }

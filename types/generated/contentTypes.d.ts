@@ -661,9 +661,9 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
     name: Attribute.String & Attribute.Required
     icon: Attribute.Media & Attribute.Required
     nameText: Attribute.String & Attribute.Required
-    obenText: Attribute.String & Attribute.Required
+    obenText: Attribute.Text & Attribute.Required
     media: Attribute.Media & Attribute.Required
-    underText: Attribute.String & Attribute.Required
+    underText: Attribute.Text & Attribute.Required
     createdAt: Attribute.DateTime
     updatedAt: Attribute.DateTime
     publishedAt: Attribute.DateTime

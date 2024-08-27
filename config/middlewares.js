@@ -11,7 +11,7 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['http://localhost:3000'], // React uygulamanızın domaini
+      origin: ['http://localhost:3000','https://www.healthclinicturkiye.com','https://92.205.17.203'], // React uygulamanızın domaini
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
       headers: [
         'Content-Type',
@@ -19,7 +19,11 @@ module.exports = [
         'Origin',
         'Accept',
         'X-Requested-With',
+        'Access-Control-Allow-Origin',
+        'Access-Control-Allow-Headers',
+        'Access-Control-Allow-Methods',
       ],
+      exposedHeaders: ['Authorization'],
     },
   },
   
